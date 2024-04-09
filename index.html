@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Beat Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="head"><img class="one" src="img/logo.png">BASIC BEAT UP</div>
+        </header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">HOME</a>
+            <a href="#">Favourite Songs </a>
+            <a href="#">Settings</a>
+        </div>
+        <span class="hambuger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div id="main">
+        </div> 
+     <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "black";
+        }
+      </script> 
+      <div class="searchbar">
+            <input type="text" class="text" placeholder="Search Artists, Song, Podcast">
+            <a href="#" class="button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </div>
+        <button class="btn2"><b>Get BB Premium</b></button>
+        <button class="btn"><b>Go ad free<span> </span><span class="span"><sup>NEW</sup></span></b></button>
+        <img src="img/pic2.jpg" class="user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                    <img src="img/pic2.jpg">
+                    <h3>Ishita Gupta</h3>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-links">
+                        <img class="imagess" src="img/edit user.png">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-links">
+                        <img class="imagess" src="img/help.png">
+                        <p>Help and Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-links">
+                        <img class="imagess" src="img/logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        <script>
+             let subMenu = document.getElementById("subMenu")
+             function toggleMenu(){
+                subMenu.classList.toggle("open-menu")
+            }
+        </script>
+        <nav class="navigation-menu">
+            <div class="nav-cont container">
+                <a href="#" class="nav-link">All</a>
+                <a href="#" class="nav-link">Trending Songs</a>
+                <a href="#" class="nav-link">Mood and Genres <span>></span></a>
+                <a href="#" class="nav-link">New Releases</a>
+                <a href="#" class="nav-link">Album</a>
+                <a href="#" class="nav-link">Instrumental</a>
+                <a href="#" class="nav-link">Radio</a>
+                <a href="#" class="nav-link">Podcast</a>
+                <a href="#" class="nav-link">Made For You</a>
+                <a href="#" class="nav-link">Liked Songs</a>
+                <a href="#" class="nav-link">Live Events</a>
+            </div>  
+        </nav>
+        <h1 class="heading1">Recent Played Songs</h1>
+        <div class="songs-section">
+            <div class="child1">
+                <img class="rp" src="img/cover1.webp">
+                <p>Kahani Suno 2.0</p>
+                <p>Kaifi Khali</p>
+            </div>
+            <div class="child2">
+                <img class="rp" src="img/cover2.jpg">
+                <p>Kesariya</p>
+                <p>Pritam, Arijit Singh</p>
+            </div>
+            <div class="child3">
+                <img class="rp" src="img/cover3.jpg">
+                <p>Doobey</p>
+                <p>OAFF, Savera, Kausar Munir</p>
+            </div>
+            <div class="child4">
+                <img class="rp" src="img/cover4.jpg">
+                <p>Main Rang Sharbaton Ka</p>
+                <p>Arijit Singh, Pritam</p>
+            </div>
+            <div class="child5">
+                <img class="rp" src="img/cover5.webp">
+                <p>Pehli Dafa</p>
+                <p>Atif Aslam, Shiraz Uppal</p>
+            </div>
+            <div class="child6">
+                <img class="rp" src="img/cover6.jpg">
+                <p>Such Keh Raha Hai</p>
+                <p>KK</p>
+            </div>
+            <div class="child7">
+                <img class="rp" src="img/cover7.jpg">
+                <p>Baarish Mein Tum</p>
+                <p>Neha Kakker, Rohanpreet Singh</p>
+            </div>
+            <div class="child8">
+                <img class="rp" src="img/cover8.jpg">
+                <p>Tu/You</p>
+                <p>Armaan Malik</p>
+            </div>
+        </div>
+        <h1 class="heading2">Hot Hits Hindi</h1>
+        <div class="songs-section1">
+            <div class="child9">
+                <img class="rp" src="img/cover9.jpg">
+                <a class="m" href="songs.html" type="button" target="_blank"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                <p>Pritam, Arijit Singh, Tanishk Bagchi<br> A.R.Raham, Madhur Sharma..</p>
+            </div>
+            <div class="child10">
+                <img class="rp" src="img/cover10.jpg">
+                <p>Vishal Shekar, Shipla Rao, Tulsi Kumar<br>Akhil Sachdeva, Neeti Mohan..</p>
+            </div>
+            <div class="child11">
+                <img class="rp" src="img/cover11.jpg">
+                <p>King, Nick Jonas, Yo Yo Honey Singh<br>Kanishk Sethi, Millind Gaba..</p>
+            </div>
+            <div class="child12">
+                <img class="rp" src="img/cover12.jpg">
+                <p>Selena Gomez, Kavita Seth, KK<br>Sanjay Leela Bhansali..</p>
+            </div>
+            <div class="child13">
+                <img class="rp" src="img/cover13.jpg">
+                <p>Shae Gill,Amitabh Bhattacharya,Nimrat Khaira<br>Ankit Tiwari,Harry Sandhu..</p>
+            </div>
+            <div class="child14">
+                <img class="rp" src="img/cover14.jpg">
+                <p>Jubin Nautiyal, Aditya A, Alka Yagnik<br>Javed Ali, Neha Kakker..</p>
+            </div>
+            <div class="child15">
+                <img class="rp" src="img/cover15.jpg">
+                <p>AP Dhilon, Badshah, Gurinder Gill<br>Ikky,Inderpal Moga..</p>
+            </div>
+            <div class="child16">
+                <img class="rp" src="img/cover16.jpg">
+                <p>Diljit Dosanjh,Rana Sotal,Darshan Raval<br>Nikhita Gandhi..</p>
+            </div>
+        </div>
+        <h1 class="heading3">Best of Artists</h1>
+        <div class="songs-section2">
+            <div class="child17">
+                <img class="rp" src="img/cover17.jpg">
+                <p>Arijit Singh</p>
+            </div>
+            <div class="child18">
+                <img class="rp" src="img/cover18.jpg">
+                <p>Pritam</p>
+            </div>
+            <div class="child19">
+                <img class="rp" src="img/cover18.jpg">
+                <p>Darshan Raval</p>
+            </div>
+            <div class="child20">
+                <img class="rp" src="img/cover20.jpg">
+                <p>Tanishk Bagchi</p>
+            </div>
+            <div class="child21">
+                <img class="rp" src="img/cover21.jpg">
+                <p>Badshah</p>
+            </div>
+            <div class="child22">
+                <img class="rp" src="img/cover22.jpg">
+                <p>KK</p>
+            </div>
+            <div class="child23">
+                <img class="rp" src="img/cover23.jpg">
+                <p>Neeti Mohan</p>
+            </div>
+            <div class="child24">
+                <img class="rp" src="img/cover24.jpg">
+                <p>Dhvani Bhanushali</p>
+            </div>
+        </div>
+    </body>
+</html>
